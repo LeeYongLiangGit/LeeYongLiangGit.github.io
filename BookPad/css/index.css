@@ -1,0 +1,26 @@
+body {
+    background-color: aliceblue;
+}
+
+.center {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#header {
+    font-family: 'Righteous', sans-serif;
+    margin-bottom: 23px;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: 'Righteous', sans-serif;
+}
+
+.book-list {
+    margin-top: 30px;
+}
+
+input[type=search]::-webkit-search-cancel-button {
+    -webkit-appearance: searchfield-cancel-button;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BookPad</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <!-- Content delivery network (CDN) Remote version -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <!-- Local version -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">BookPad</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="booklist.html">My Book List</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Book Finder -->
+    <div class="container">
+        <div id="title" class="center">
+            <h1 id="header" class="text-center mt-5">Book Finder</h1>
+            <div class="row">
+                <form class="form-inline" id="myForm">
+                    <input class="form-control mr-sm-2" type="search" id="books"
+                        placeholder="What are you looking for?" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Results -->
+        <div class="book-list">
+            <h2 class="text-center">Search Result</h2>
+            <div id="list-output" style="text-align: center;">
+                <div class="row">
+                    <!-- card view of each book  -->
+                    <p>Nothing to display yet....</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="margin-top:13px; text-align: center;">
+        <p>
+            Made by: <b>Lee Yong Liang</b>
+        </p>
+    </footer>
+
+</body>
+
+<!-- JS -->
+<!-- Content delivery network (CDN) Remote version -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+<!-- Local version -->
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/booksearch.js"></script>
+<script src="js/bookmanagement.js"></script>
+
+</html>
