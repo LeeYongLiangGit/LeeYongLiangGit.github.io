@@ -66,21 +66,21 @@ $(document).ready(function () {
         return false;
     });
 
-    // Nothing to display shows up when you press enter
+    // Problem 1: Nothing to display (appears when you press enter instead of search button)
     document.getElementById("books").addEventListener("search", function (event) { $("#list-output").empty(); outputList.innerHTML = "Nothing to display yet..."});
 });
 
-// card element formatter using es6 backticks and templates (individual card)
+// Panel element formatter using es6 backticks and templates (individual panel)
 function formatOutput(bookImg, title, author, publisher, bookLink, date) {
     var htmlCard =
     `<div class="col-lg-6">
         <div class="panel panel-primary">
             <div class="panel-heading">${title}</div>
             <div class="panel-body">
-                <div class="col-lg-6">
-                    <img src="${bookImg}" class="img-responsive" alt="Image">
+                <div class="col-lg-4 col-sm-6">
+                    <img src="${bookImg}" style="height:100px;" class="img-responsive" alt="Image">
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-8" col-sm-6>
                     <p> <b>Author</b>: ${author} </p>
                     <p> <b>Publisher</b>: ${publisher} </p>
                     <p> <b>Published Date</b>: ${date} </p>
